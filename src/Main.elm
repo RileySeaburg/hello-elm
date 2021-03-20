@@ -1,5 +1,8 @@
 module Main exposing (main)
+
 import Html exposing (text)
 
-main = 
+
+main : Html.Html msg
+main =
     text "Hello, Elm"

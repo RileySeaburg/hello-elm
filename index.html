@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>Types.BottlesOnTheWall</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4418,12 +4418,18 @@ var $elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 			return 3;
 	}
 };
+var $elm$core$Debug$toString = _Debug_toString;
+var $author$project$Types$BottlesOnTheWall$bottlesOf = F2(
+	function (contents, amount) {
+		return $elm$core$Debug$toString(amount) + (' bottles of ' + (contents + ' on the wall.'));
+	});
 var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
-var $author$project$Main$main = $elm$html$Html$text('Hello, Elm');
-_Platform_export({'Main':{'init':_VirtualDom_init($author$project$Main$main)(0)(0)}});}(this));
+var $author$project$Types$BottlesOnTheWall$main = $elm$html$Html$text(
+	A2($author$project$Types$BottlesOnTheWall$bottlesOf, 'juice', 1));
+_Platform_export({'Types':{'BottlesOnTheWall':{'init':_VirtualDom_init($author$project$Types$BottlesOnTheWall$main)(0)(0)}}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.Types.BottlesOnTheWall.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {
